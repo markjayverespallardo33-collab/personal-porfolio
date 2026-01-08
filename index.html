@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Jayver Espallardo | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #1f1f1f;
+            color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 2rem;
+        }
+
+        nav ul li a:hover {
+            color: #ff6b6b;
+        }
+
+        /* Hero Section */
+        header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 6rem 2rem;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: #fff;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 1.5rem;
+            border: 4px solid #fff;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Sections */
+        section {
+            padding: 4rem 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: #1f1f1f;
+        }
+
+        /* About Me */
+        #about p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        /* Skills */
+        #skills .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        #skills .skill {
+            background-color: #2575fc;
+            color: #fff;
+            padding: 0.8rem 1.2rem;
+            border-radius: 5px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            transition: transform 0.2s;
+        }
+
+        #skills .skill:hover {
+            transform: scale(1.1);
+        }
+
+        #skills .skill img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            margin-right: 0.5rem;
+            vertical-align: middle;
+        }
+
+        /* Contact */
+        #contact p {
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        #contact a {
+            color: #2575fc;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1f1f1f;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 2rem;
+        }
+
+        /* Responsive Navbar */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                background-color: #1f1f1f;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 200px;
+                display: none;
+            }
+
+            nav ul.show {
+                display: flex;
+            }
+
+            nav ul li {
+                margin: 1rem 0;
+            }
+
+            .menu-toggle {
+                display: block;
+                cursor: pointer;
+            }
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Mark Jayver</div>
+        <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+        <ul id="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero / Home Section -->
+    <header id="home">
+        <img src="b936047a-2ac8-41f4-ae30-1a9a7c29b799.jpg" alt="Mark Jayver" class="profile-pic">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi! I’m Mark Jayver Espallardo – a fast learner excited to explore new things, passionate about coding, and always ready for the next challenge.</p>
+    </header>
+
+    <!-- Profile Section -->
+    <section id="profile">
+        <h2>Profile</h2>
+        <p>I’m a student who enjoys coding and mobile games. I love thinking through problems creatively and always look for opportunities to grow and learn new things.</p>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi! I’m Mark Jayver Espallardo, a fast learner who’s always excited to explore new things. I love coding and mobile games, and I enjoy thinking through problems in creative ways. My current goal is to graduate, but along the way, I also treasure bonding with my family. I’m curious, motivated, and always ready to take on the next challenge while keeping life fun and meaningful.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <div class="skill"><img src="images\java.png" alt="Java">Java</div>
+            <div class="skill"><img src="images\python.png" alt="Python">Python</div>
+            <div class="skill"><img src="images\php.png" alt="PHP">PHP</div>
+            <div class="skill"><img src="images\javascript.png" alt="JavaScript">JavaScript</div>
+            <div class="skill"><img src="images\html.png" alt="HTML">HTML</div>
+            <div class="skill"><img src="images\css.png" alt="CSS">CSS</div>
+            <div class="skill"><img src="images\git.png" alt="Git">Git</div>
+            <div class="skill"><img src="images\github.png" alt="GitHub">GitHub</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can reach me via email: <a href="mailto:markjayverespallardo33@gmail.com">markjayverespallardo33@gmail.com</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Mark Jayver Espallardo. All rights reserved.</p>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navbar = document.getElementById('navbar');
+
+        mobileMenu.addEventListener('click', () => {
+            navbar.classList.toggle('show');
+        });
+    </script>
+
+</body>
+</html>
